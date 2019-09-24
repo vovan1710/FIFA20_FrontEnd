@@ -1,0 +1,11 @@
+.footer{
+    height: 60px;
+    text-align: center;
+    align-items: center;
+    color: #fff;
+    font-size: 14px;
+    background-color: #273f50;
+    font-family: 'Verdana', serif;
+    letter-spacing: 0em;
+    display: flex;
+}

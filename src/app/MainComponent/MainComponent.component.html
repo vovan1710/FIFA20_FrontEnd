@@ -1,3 +1,488 @@
-<p>
-  MainComponent works!
-</p>
+<!--------------------------------------- Register ---------------------------->
+
+<section class="register" style="display: none;" >
+    <div class="container">
+        <a href="#" class="register__close"><img src="../../assets/img/close_small.png" alt="close"></a>
+        <div class="row">
+            <div class="col-lg-5 m-auto">
+                <form>
+                    <h2 class="register__header">Регистрация</h2>
+                    <div class="register__item">
+                        <label for="register__email">Электронная почта</label>
+                        <input type="email" class="register__input" id="register__email" required >
+                    </div>
+                    <div class="register__item">
+                        <label for="register__password">Пароль</label>
+                        <input type="password" class="register__input" id="register__password" required>
+                    </div>
+                    <div class="register__item">
+                         <div class="register__check d-flex">
+                            <label for="register__password-repeat">Подтверждение пароля</label>
+                            <span id='message'></span>
+                         </div>
+
+                        <input type="password" class="register__input" id="register__password-repeat" required>
+                        
+                    </div>
+                    <button type="submit" class="register__button">Зарегистрироваться</button>
+                    <div class="register__question">
+                            Уже зарегистрированы? <a id="login_in" >Войдите. </a> 
+                    </div>
+                    <div class="register__social ">
+                        <p>Войти через соцсети</p> 
+                        <div class="register__icons">
+                            <a href="#"> <img class="register__vk" src="../../assets/img/register_login/vk_icon.png" alt="Vkontakte">
+                            </a>
+                            <a href="#"> <img class="register__fb" src="../../assets/img/register_login/fb_icon.png" alt="Facebook">
+                            </a>
+                         </div>  
+                    </div>
+                    <div class="register__security">
+                        <p class="register__security-text">Ваши личные данные надежно защищены и не будут
+                        переданы третьим лицам</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+  
+    </div>
+</section>
+<!--------------------------------------- /Register ---------------------------->
+
+<!--------------------------------------- Login ---------------------------->
+
+<section class="login" style="display: none;">
+    <div class="container">
+        <a href="#" class="register__close"><img src="../../assets/img/close_small.png" alt="close"></a>
+        <div class="row">
+            <div class="col-lg-5 m-auto">
+                <form>
+                    <h2 class="login__header">Вход на FutDron</h2>
+                    <div class="login__item">
+                        <label for="login__email">Электронная почта</label>
+                        <input type="email" class="login__input" id="login__email" required >
+                    </div>
+                    <div class="login__item">
+                        <label for="login__password">Пароль</label>
+                        <input type="password" class="login__input" id="login__password" required>
+                    </div>
+ 
+                    <button type="submit" class="login__button">Войти</button>
+                    <div class="login__question">
+                            Забыли пароль? <a href="#">Сбросьте его. </a> 
+                    </div>
+                    <div class="register__social ">
+                        <p>Войти через соцсети</p> 
+                        <div class="login__icons">
+                            <a href="#"> <img class="login__vk" src="../../assets/img/register_login/vk_icon.png" alt="Vkontakte">
+                            </a>
+                            <a href="#"> <img class="login__fb" src="../../assets/img/register_login/fb_icon.png" alt="Facebook">
+                            </a>
+                            </div>  
+                    </div>
+                    <div class="login__security">
+                        <p class="login__security-text">Ваши личные данные надежно защищены и не будут
+                        переданы третьим лицам</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    
+    </div>
+</section>
+<!--------------------------------------- /Login ---------------------------->
+
+
+
+<section class="first-section" id="first-section" >
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <img src="../../assets/img/logo-full.png" alt="Logotype" class="logo">
+            </div>
+            <div class="col-lg-3 ml-auto">
+                <div class="bonus-info ml-auto">
+                    <p class="bonus-info__text">
+                        Регистрация займет не более <span>2 минут!</span> 
+                    </p>
+                    <h3 class="bonus-info__bold-text">
+                        + Бонусы
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div class="main-info">
+            <h1 class="main-header">
+                Продажа монет <br> в  FIFA 20 Ultimate team
+            </h1>
+            <div class="row">
+                <div class="col-lg-4">
+                    <a href="#buying" class="button buy-btn">
+                            <img src="../../assets/img/basket.png" alt="">
+                            Купить монеты
+                    </a>    
+                </div>
+                <div class="col-lg-4">
+                        <a href="#advanteges" class="button read-more-btn">
+                            Узнать подробнее
+                        </a>    
+                </div>
+            </div>
+        </div>
+    </div>  
+</section>
+<section class="advanteges" id="advanteges">
+    <div class="container">
+        <h2 class="advanteges-header">Преимущества</h2>
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="advantege">
+                    <img src="../../assets/img/price.png" alt="price">
+                    <h5 class="advantege__header advantege__header_price">Цена</h5>
+                    <p class="advantege__text">
+                            Это самая низкая цена на монеты на рынке.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="advantege">
+                    <img src="../../assets/img/fast-delivery.png" alt="fast-delivery">
+                    <h5 class="advantege__header advantege__header_fast-delivery">Доставка</h5>
+                    <p class="advantege__text">
+                            Доставка просходит <br> в считаные минуты. 
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="advantege">
+                    <img src="../../assets/img/guaranties.png" alt="guaranties">
+                    <h5 class="advantege__header advantege__header_guaranties">Гарантия</h5>
+                    <p class="advantege__text">
+                            100% гарантия от банов и обнулений
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="advantege">
+                    <img src="../../assets/img/security.png" alt="security">
+                    <h5 class="advantege__header advantege__header_security">Безопасность</h5>
+                    <p class="advantege__text">
+                            3–х летний опыт работы и безопасный метод доставки 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="discount">
+            <h4 class="discount__header">
+                Система скидок для оптовой покупки
+            </h4>
+            <img src="../../assets/img/line.png" alt="line" class="line-image">
+            <div class="row align-items-center">
+                <div class="col-lg-3 discount__percent-image ">
+                    <img src="../../assets/img/percent.png" alt="percent" >
+                </div>
+                <div class="col-lg-9 text-left">
+                    <p class="discount__decription">
+                        При заказе от <span class="bold-text">1 млн монет,</span>  скидка <span class="bold-text">10 %</span>  <br>
+                        При заказе от <span class="bold-text">2 млн монет,</span>  скидка <span class="bold-text">15 %</span> 
+                </p>
+                </div>
+            </div>
+            <p class="discount__text-atention">
+                    (<span class="bold-text">Внимание!</span> Вы получаете дополнительную выгоду при <span class="bold-text underline">регистрации</span> )
+            </p>
+        </div>
+    </div>
+</section>
+<section class="buying" id="buying">
+    <div class="container">
+        <h2 class="buying-header">
+            Купить  монеты FIFA 20
+        </h2>
+        <div class="row">
+            <div class="col-lg-6">
+                <form action="">
+                    <div class="creating-order">
+                        <h6 class="creating-order__header creating-order__header_first">
+                            Выберите вашу платформу
+                        </h6>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <label>
+                                    <input type="radio" name="console" value="xbox">
+                                    <div  class="creating-order__console creating-order__console_xbox">
+                                        <img class="creating-order__image-xbox" src="../../assets/img/XBOX ONE  black.png" alt="Xbox">
+                                        <img class="creating-order__image-xbox-green" src="../../assets/img/XBOX ONE green.png" alt="Xbox-green">
+                                        <p>XBOX ONE</p>
+                                    </div>                                  
+                                </label>
+
+                            </div>
+                            <div class="col-lg-4">
+                                <label>
+                                    <input type="radio" name="console" value="xbox" checked>
+                                    <div  class="creating-order__console creating-order__console_ps4">
+                                        <img class="creating-order__image-ps4"  src="../../assets/img/PS4 black.png" alt="Ps4">
+                                        <img class="creating-order__image-ps4-blue" src="../../assets/img/PS4 blue.png" alt="Ps4-blue">
+                                        <p>PS4</p>
+                                     </div>
+                                </label>
+                            </div>
+                        </div>
+                        <h6 class="creating-order__header creating-order__header_second">
+                            Для подтверждения оплаты введите свой E-mail
+                        </h6>
+                        <input type="email" class="input creating-order__email" placeholder="E-mail" required>
+                        <h6 class="creating-order__header creating-order__header_third">
+                            Сколько монет покупаем?
+                        </h6>
+                        <div class="creating-order__slider" id="slider-ps4"></div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="creating-order__coins-box">
+                                    <p class="creating-order__input-header">
+                                        Монет получите:
+                                    </p>
+                                    <img src="../../assets/img/coins.png" alt="coins" class="creating-order__coins-icon">
+                                    <input type="number" id="coins-ps4" class="input creating-order__coins" value="" step="1000">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="creating-order__money-box">
+                                    <p class="creating-order__input-header">
+                                        Стоимость:
+                                    </p>
+                                    <img src="../../assets/img/rubl.png" alt="coins" class="creating-order__rubl-icon">
+                                    <input type="number" id="money-ps4" class="input creating-order__money" value="" readonly> 
+                                </div>
+                            </div>
+                            <div class="creating-order__accept">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <button type='submit' class="creating-order__button button">
+                                            Оформить заказ
+                                        </button>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p class="creating-order__accept-text">
+                                            Вы будете переправлены на страницу оплаты, 
+                                            после оплаты вы сможете перейти к доставке </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-lg-5 ml-auto">
+                <div class="order-info">
+                        <h6 class="order-info__header">
+                            Оформление заказа:
+                        </h6>
+                        <p class="order-info__step">
+                            Выберите платформу. 
+                        </p>
+                        <p class="order-info__step">
+                            Введите свой E-mail или
+                            зарегистрируйтесь.
+                        </p>
+
+                        <p class="order-info__step">
+                            Введите необходимо количество
+                            монет, либо сумму денег.
+
+                        </p>
+
+                        <p class="order-info__step">
+                            Оплатите заказ одним из спосо
+                        </p>
+
+                        <p class="order-info__step bold-text">
+                            Отправьте ваш E-mail в онлайн чат
+                            консультанту.
+                        </p>
+
+                        <div class="order-info__bonuses">
+                            <p class="order-info__bonus order-info__bonus_delivery">
+                                Среднее время доставки 
+                                монет от 8 до 20 минут.
+                            </p>
+
+                            <p class="order-info__bonus order-info__bonus_register">
+                                Вы получаете бонусы при 
+                                регистрации 
+                            </p>
+
+                            <p class="order-info__bonus order-info__bonus_thanks">
+                                Спасибо за то что воспользовались
+                                нашим сервисом! Желаем успехов в 
+                                игре! 
+                            </p>
+ 
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="opinions" id="opinions">
+    <div class="container">
+        <h2 class="opinions-header">
+            Отзывы наших покупателей
+        </h2>
+        <div class="average-rank d-flex">
+            <div class="average-rank__stars">
+                <img class="average-rank__star" src="../../assets/img/star_full.png" alt="full-star">
+                <img class="average-rank__star" src="../../assets/img/star_full.png" alt="full-star">
+                <img class="average-rank__star" src="../../assets/img/star_full.png" alt="full-star">
+                <img class="average-rank__star" src="../../assets/img/star_full.png" alt="full-star">
+                <img class="average-rank__star" src="../../assets/img/empy_star.png" alt="empy-star">
+            </div>
+            <div class="average-rank__grade d-flex">
+                <span class="average-rank__current">4</span> / <span class="average-rank__full">5</span>
+            </div>
+        </div>
+        <div class="sorting d-flex">
+            <div class="sorting__type sorting__type_new">
+                Новые
+            </div>
+            <div class="sorting__type sorting__type_best">
+                Лучшие
+            </div>
+        </div>
+        <div class="opinion">
+            <div class="row align-items-center">
+                <div class="col-lg-1">
+                    <div class="opinion__avatar d-flex">
+                        <img src="../../assets/img/avatar.png" alt="avatar">
+                    </div>
+                </div>
+                <div class="col-lg-11">
+                    <div class="opinion__info">
+                        <div class="opinion__stars">
+                            <img class="opinion__star" src="../../assets/img/smallStarfull.png" alt="small-fullstar">
+                            <img class="opinion__star" src="../../assets/img/smallStarfull.png" alt="small-fullstar">
+                            <img class="opinion__star" src="../../assets/img/smallStarfull.png" alt="small-fullstar">
+                            <img class="opinion__star" src="../../assets/img/smallStarfull.png" alt="small-fullstar">
+                            <img class="opinion__star" src="../../assets/img/smallStarEmpy.png" alt="small-empystar">
+                        </div>
+                        <div class="opinion__login-date d-flex">
+                            <div class="opinion__login">
+                                    Forzorezor
+                            </div>
+                            <div class="opinion__date">
+                                <span class="opinion__day">22.09.2019</span>
+                                <span class="opinion__time">17:48</span>
+                            </div>
+                        </div>
+                        <div class="opinion__text">
+                            <p>Все отлично! Сайт просто лучший, очень доволен!</p>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="opinion">
+                <div class="row align-items-center">
+                    <div class="col-lg-1">
+                        <div class="opinion__avatar d-flex">
+                            <img src="../../assets/img/avatar.png" alt="avatar">
+                        </div>
+                    </div>
+                    <div class="col-lg-11">
+                        <div class="opinion__info">
+                            <div class="opinion__stars">
+                                <img class="opinion__star" src="../../assets/img/smallStarfull.png" alt="small-fullstar">
+                                <img class="opinion__star" src="../../assets/img/smallStarfull.png" alt="small-fullstar">
+                                <img class="opinion__star" src="../../assets/img/smallStarfull.png" alt="small-fullstar">
+                                <img class="opinion__star" src="../../assets/img/smallStarfull.png" alt="small-fullstar">
+                                <img class="opinion__star" src="../../assets/img/smallStarEmpy.png" alt="small-empystar">
+                            </div>
+                            <div class="opinion__login-date d-flex">
+                                <div class="opinion__login">
+                                        Forzorezor
+                                </div>
+                                <div class="opinion__date">
+                                    <span class="opinion__day">22.09.2019</span>
+                                    <span class="opinion__time">17:48</span>
+                                </div>
+                            </div>
+                            <div class="opinion__text">
+                                <p>Все отлично! Сайт просто лучший, очень доволен!</p>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="opinion">
+                <div class="row align-items-center">
+                    <div class="col-lg-1">
+                        <div class="opinion__avatar d-flex">
+                            <img src="../../assets/img/avatar.png" alt="avatar">
+                        </div>
+                    </div>
+                    <div class="col-lg-11">
+                        <div class="opinion__info">
+                            <div class="opinion__stars">
+                                <img class="opinion__star" src="../../assets/img/smallStarfull.png" alt="small-fullstar">
+                                <img class="opinion__star" src="../../assets/img/smallStarfull.png" alt="small-fullstar">
+                                <img class="opinion__star" src="../../assets/img/smallStarfull.png" alt="small-fullstar">
+                                <img class="opinion__star" src="../../assets/img/smallStarfull.png" alt="small-fullstar">
+                                <img class="opinion__star" src="../../assets/img/smallStarEmpy.png" alt="small-empystar">
+                            </div>
+                            <div class="opinion__login-date d-flex">
+                                <div class="opinion__login">
+                                        Forzorezor
+                                </div>
+                                <div class="opinion__date">
+                                    <span class="opinion__day">22.09.2019</span>
+                                    <span class="opinion__time">17:48</span>
+                                </div>
+                            </div>
+                            <div class="opinion__text">
+                                <p>Все отлично! Сайт просто лучший, очень доволен!</p>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="opinion">
+                <div class="row align-items-center">
+                    <div class="col-lg-1">
+                        <div class="opinion__avatar d-flex">
+                            <img src="../../assets/img/avatar.png" alt="avatar">
+                        </div>
+                    </div>
+                    <div class="col-lg-11">
+                        <div class="opinion__info">
+                            <div class="opinion__stars">
+                                <img class="opinion__star" src="../../assets/img/smallStarfull.png" alt="small-fullstar">
+                                <img class="opinion__star" src="../../assets/img/smallStarfull.png" alt="small-fullstar">
+                                <img class="opinion__star" src="../../assets/img/smallStarfull.png" alt="small-fullstar">
+                                <img class="opinion__star" src="../../assets/img/smallStarfull.png" alt="small-fullstar">
+                                <img class="opinion__star" src="../../assets/img/smallStarEmpy.png" alt="small-empystar">
+                            </div>
+                            <div class="opinion__login-date d-flex">
+                                <div class="opinion__login">
+                                        Forzorezor
+                                </div>
+                                <div class="opinion__date">
+                                    <span class="opinion__day">22.09.2019</span>
+                                    <span class="opinion__time">17:48</span>
+                                </div>
+                            </div>
+                            <div class="opinion__text">
+                                <p>Все отлично! Сайт просто лучший, очень доволен!</p>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <a href="#" class="next-opinion"> Следующие комментарии </a>
+        
+    </div>
+</section>

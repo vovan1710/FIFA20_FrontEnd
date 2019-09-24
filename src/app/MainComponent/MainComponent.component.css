@@ -1,0 +1,702 @@
+/* ---------------------------------------First-secion------------------------------------------ */
+.first-section{
+    background: url("../../assets/img/first-section.jpg") no-repeat center top /cover;
+}
+.logo{
+    padding-top: 68px;
+}
+
+.bonus-info{
+    height: 100px;
+    width: 208px;
+    color: #273f50;
+    margin-top: 32px;
+    text-align: center;
+    line-height: 20px;
+    border: 1px dashed #273f50;
+    border-radius: 10px;
+    align-items: center;
+    padding:13px 0 13px;
+}
+
+.bonus-info__text{
+    font-size: 14px;
+    letter-spacing: 0.01em;
+
+
+}
+
+.bonus-info__text span{
+    font-family: 'Exo 2 Extra Bold', serif;
+    text-align: center
+    
+}
+
+.bonus-info__bold-text{
+    text-transform: none;
+}
+
+.main-info{
+    padding-bottom: 70px;
+}
+
+.main-header{
+    padding: 50px 0 70px;
+}
+
+.buy-btn{
+    color:#ffe200;
+    background: #273f50;
+}
+
+.buy-btn:hover{
+    box-shadow:inset 0px 0px 10px 0px rgba(255,226,0,1);
+    transition:all 0.5s;
+}
+
+.read-more-btn{
+    color: #273f50;
+    border: 1px solid #273f50;
+    margin-left: 25px;
+    box-shadow: 1px 1px 6px 1px rgba(39,63,80,0.91);
+}
+
+.read-more-btn:hover{
+    transition:all 0.5s;
+    color: #ffe200;
+    background: #273f50;
+}
+
+/* ---------------------------------------Advanteges------------------------------------------ */
+.advanteges{
+    background:url("../../assets/img/full_advanteges-background.jpg") no-repeat center top /cover;
+    padding: 55px 0 70px;
+    position: relative;
+}
+
+.advanteges-header{
+    color: #fddb17;
+    font-family: 'Exo 2 Extra Bold', serif;
+    font-size: 40px;
+    letter-spacing: 0.1em;
+    text-transform: none;
+    padding-bottom: 30px;
+}
+
+.advantege{
+    width: 265px;
+    height: 268px;
+    text-align: center;
+    border: 2px solid #ffe200;
+    padding: 34px 0 25px;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+}
+
+.advantege__header{
+    padding: 25px 0 10px;
+    font-size: 25px;
+    font-family: 'Exo 2 Extra Bold', serif;
+    text-transform: none;
+}
+
+.advantege__header_fast-delivery{
+    padding-top: 30px;
+}
+
+.advantege__header_guaranties{
+    padding-top: 29px;
+}
+
+.advantege__header_security{
+    padding-top: 26px;
+}
+
+
+.advantege__text{
+    font-size: 20px;
+    font-weight: medium;
+    line-height: 24px;
+    letter-spacing: 0.12em;
+}
+
+.discount{
+    margin-top: 33px;
+    background-color: #fddb17;
+    width: 1120px;
+    height: 305px;
+    text-align: center;
+    padding: 23px 0 40px;
+    color: #273f50;
+    letter-spacing: 0.1em;
+    font-size: 20px;
+}
+
+.discount__header{
+    font-size: 36px;
+    line-height: 30px;
+    text-transform: none;
+    font-family: "Exo 2 Semi Bold";
+    letter-spacing: 0.1em;
+    padding-bottom: 10px;
+}
+
+.discount__percent-image{
+    margin-left: -10px;
+    text-align: right;
+}
+
+.discount__text-atention{
+    font-size: 20px;
+    padding-top: 25px;
+    width: 600px;
+    margin:auto;
+    text-align: left;
+}
+
+.bold-text{
+    font-family: 'Exo 2 Extra Bold', serif;
+}
+
+.underline{
+    display:inline-block;
+    border-bottom:2px solid #273f50;
+    padding-bottom:2px;
+}
+
+/* ---------------------------------------Buying-process----------------------------------------- */
+
+.buying{
+    background-color: #ececee;
+    padding: 60px 0 60px;
+    color:#000000;
+}
+
+.buying-header{
+    padding-bottom: 15px;
+    font-size: 36px;
+    letter-spacing: 0.115em;
+
+}
+
+.creating-order{
+
+}
+
+.creating-order__header{
+    position: relative;
+    padding-left: 50px;
+    margin-bottom: 30px;
+}
+
+.creating-order__header:before{
+    height: 40px;
+    width: 40px;
+    background-color: #273f50;
+    border-radius: 50%;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    color: white;
+    font-size: 24px;
+    left: 0px;
+    padding-top: 5px;
+    top: -5px;
+}
+
+.creating-order__header_first:before{
+    content: "1";
+
+}
+.creating-order__header_second:before{
+    content: "2";
+}
+.creating-order__header_third:before{
+    content: "3";
+}
+
+.creating-order__console{
+    width: 170px;
+    height: 170px;
+    display: block;
+    text-align: center;
+    align-items: center;
+    background-color: #dce6f3;
+    border-radius: 50%;
+    color:black;
+    font-size: 24px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    letter-spacing: 0.01em;
+}
+
+/* HIDE RADIO */
+[type=radio] { 
+position: absolute;
+opacity: 0;
+width: 0;
+height: 0;
+}
+
+input:checked  {
+    animation: manimate 7s;
+  }
+
+/* CHECKED STYLES XBOX*/
+[type=radio]:checked + .creating-order__console_xbox{
+box-shadow: inset 1px 1px 14px 3px rgba(0, 142, 7, 0.5);
+transition: all, 3s;
+}
+
+[type=radio]:checked + .creating-order__console_xbox .creating-order__image-xbox {
+    animation: manimate 7s;
+    display: none;
+    transition: all, 3s;
+}
+
+[type=radio]:checked + .creating-order__console_xbox .creating-order__image-xbox-green {
+    animation: manimate 7s;
+    display: inline;
+    transition: all, 3s;
+}
+
+/* CHECKED STYLES PS4*/
+[type=radio]:checked + .creating-order__console_ps4{
+    box-shadow: inset 1px 1px 20px 10px rgba(0, 78, 194, 0.3);
+    transition: all, 3s;
+}
+
+[type=radio]:checked + .creating-order__console_ps4 .creating-order__image-ps4 {
+    display: none;
+}
+
+[type=radio]:checked + .creating-order__console_ps4 .creating-order__image-ps4-blue {
+    display: inline;
+}
+
+.creating-order__console_xbox{
+    padding-top: 42px;
+}
+
+.creating-order__console_xbox:hover{
+    box-shadow: inset 1px 1px 14px 3px rgba(0, 142, 7, 0.5);
+    transition: all, 3s;
+}
+
+.creating-order__console_ps4{
+    padding-top: 35px;
+    margin-left: 30px;
+}
+
+.creating-order__console_ps4:hover{
+    box-shadow: inset 1px 1px 20px 10px rgba(0, 78, 194, 0.3);
+    transition: all, 3s;
+}
+
+.creating-order__image-xbox{
+    padding-bottom: 10px;
+    
+}
+
+.creating-order__image-xbox-green{
+    padding-bottom: 10px;
+    display: none;
+}
+
+.creating-order__image-ps4{
+    padding-bottom: 12px;
+}
+
+.creating-order__image-ps4-blue{
+    padding-bottom: 12px;
+    display: none;
+}
+
+.creating-order__email{
+    margin-bottom: 30px;
+    height: 38px;
+    width: 297px;
+}
+
+.creating-order__slider{
+    height: 10px;
+    width: 545px;
+    border-radius: 15px;
+    -webkit-appearance: none;  /* Override default CSS styles */
+    background-color: #179371;
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: 2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+    cursor: pointer;
+    box-shadow: 0px 0px 3px 6px rgba(183,183,183,0.91);
+    margin-bottom: 23px;
+    margin-top: 44px;
+}
+
+.creating-order__slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+
+.creating-order__input-header{
+    font-size: 20px;
+    font-family: 'Exo 2 Extra Bold', serif;
+}
+
+.creating-order__coins{
+    margin-top: 10px;
+    width: 220px;
+    position: relative;
+    padding-left: 53px;
+    
+}
+
+.creating-order__coins-icon{
+    position: absolute;
+    top: 45px;
+    left: 25px;
+}
+
+.creating-order__rubl-icon{
+    position: absolute;
+    top: 50px;
+    left: -9px;
+}
+
+
+.creating-order__money-box{ 
+    margin-left: -35px;
+}
+
+.creating-order__money{
+    margin-top: 10px;
+    position: relative;
+    padding-left: 53px;
+    width: 220px;
+    
+}
+
+.creating-order__accept{
+    padding-top: 30px;
+}
+
+.creating-order__button{
+    background-color: #179371;
+    height: 50px;
+    width: 280px;
+    border-radius: 10px;
+    color: #ffffff;
+    padding-top: 7px;
+    padding-bottom: 15px;
+    border: none;
+}
+
+.creating-order__accept-text{
+    font-size: 14px;
+    line-height: 18px;
+    padding-left: 5px;
+}
+
+.order-info{
+    line-height: 24px;
+}
+
+.order-info__header{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.order-info__step{
+    font-size: 20px;
+    position: relative;
+    padding-left: 50px; 
+    padding-bottom: 35px;
+}
+
+.order-info__step:before{
+    content:'';
+    height: 27px;
+    width: 27px;
+    background-color: #273f50;
+    border-radius: 50%;
+    position: absolute;
+    left: 15px;
+    padding-top: 5px;
+    top: 2px;
+}
+
+.order-info__bonuses{
+    padding-top: 20px;
+}
+
+.order-info__bonus{
+    font-size: 20px;
+    position: relative;
+    padding-left: 58px; 
+    padding-bottom: 35px;
+    color: #273f50;
+}
+
+.order-info__bonus:before{
+    position: absolute;
+    left: 11px;
+    padding-top: 5px;
+    top: 2px;
+}
+
+.order-info__bonus_delivery:before{
+    content: url("../../assets/img/clock.png")
+}
+
+.order-info__bonus_register:before{
+    content: url("../../assets/img/gift.png")
+}
+
+.order-info__bonus_thanks:before{
+    content: url("../../assets/img/clever.png")
+}
+
+/* ---------------------------------------Opinions----------------------------------------- */
+
+.opinions{
+    padding: 70px 0 50px;
+}
+
+
+.average-rank{
+    align-items: flex-end;
+    padding-top: 30px;
+    padding-bottom: 37px;
+}
+
+.average-rank__star{
+    padding-right: 6px;
+}
+.average-rank__grade{
+    color: #6f7b7d;
+    font-size: 23px;
+    padding-left: 15px;
+}
+
+.average-rank__current{
+    padding-right: 5px;
+}
+
+.average-rank__full{
+    padding-left: 5px;
+}
+
+.sorting{
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.sorting__type{
+    margin-right: 30px;
+    font-family: 'Exo 2 Extra Bold', serif;
+    font-size: 18px;
+    color: #6f7b7d;
+}
+
+.sorting__type_new{
+    border-bottom: 2px solid #6f7b7d;
+}
+
+.opinion{
+    padding: 25px 0 0 5px;
+}
+
+.opinion__avatar{
+    background-color: #e5e5e5;
+    height: 70px;
+    width: 70px;
+    border-radius: 5px;
+    align-items: center;
+    margin: auto;
+}
+
+.opinion__avatar img{
+    margin: auto;
+}
+
+.opinion__star{
+    padding-right: 3px;
+}
+
+
+.opinion__login-date{
+    line-height: 15px;
+    align-items: baseline;
+}
+
+.opinion__login{
+    font-size: 16px;
+    color: #000000;
+    font-family: 'Exo 2 Extra Bold', serif;
+}
+
+.opinion__date{
+    color: #bbbcbc;
+    font-size: 14px;
+    padding-left: 13px;
+}
+
+.opinion__day{
+    padding-right: 8px;
+}
+
+.opinion__text{
+    padding-top: 10px;
+    color: #000000;
+    font-size: 16px;
+}
+
+.next-opinion{
+    text-align: center;
+    border: 2px solid #d6d6d7;
+    margin-top: 35px;
+    border-radius: 10px;
+    color: #000000;
+    font-size: 18px;
+    display: block;
+    padding: 10px 0 13px;
+}
+
+/* ---------------------------------------Register and Login----------------------------------------- */
+.register{
+    background: url("../../assets/img/register_login/back_register.jpg") no-repeat center top /cover;
+    text-align: center;
+    color: #ffffff;
+    letter-spacing: 0em;
+    padding: 55px 0 65px;
+}
+
+.login{
+    background: url("../../assets/img/register_login/back_login.jpg") no-repeat center top /cover;
+    text-align: center;
+    color: #ffffff;
+    letter-spacing: 0em;
+    padding: 55px 0 65px;
+}
+
+.register__close{
+    display: table;
+    margin-left: auto;
+}
+
+.register__header, .login__header{
+    padding-bottom:27px;
+    font-size: 36px;
+    letter-spacing: 0em;
+}
+
+.register__item, .login__item{
+    padding-bottom: 8px;
+}
+
+.register__item label, .login__item label{
+    font-size: 16px;
+    letter-spacing: 0em;
+    display: block;
+    text-align: left;
+}
+
+.register__item label:after, .login__item label:after{
+    content: '*';
+    color:#b51028;
+    padding-left: 5px;
+    font-size: 20px;
+}
+
+.register__item span{
+    padding-bottom: 8px;
+    margin: auto;
+}
+
+.register__input, .login__input{
+    width: 440px;
+    background-color:#ffffff!important;
+    border-radius: 10px;
+    border: none;
+    padding: 6px 0 8px 15px;
+    font-family: "Exo 2 Semi Bold", serif;
+}
+
+.register__input:focus, .login__input:focus{
+    outline-color: #4ff8c9;
+    outline-style: auto;
+    outline-width: 5px;
+}
+
+.register__item input:-webkit-autofill, .login__item input:-webkit-autofill {
+    -webkit-text-fill-color: black !important;
+    -webkit-text-stroke: 0.01em;
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+.register__button, .login__button{
+    width: 440px;
+    background-color:#91232d;
+    font-size: 18px;
+    letter-spacing: 0em;
+    border-radius: 10px;
+    border: none;
+    padding: 6px 0 8px 13px;
+    font-family: "Exo 2 Bold", serif;
+    color: #ffffff;
+    margin: 16px auto 20px;
+}
+
+.register__question, .login__question{
+    font-size: 18px;
+    margin: auto;
+}
+
+.register__question a, .login__question a{
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.register__social, .login__social{
+    width: 440px;
+    background-color:#ffffff;
+    font-size: 16px;
+    letter-spacing: 0em;
+    border-radius: 10px;
+    border: none;
+    padding: 6px 33px 8px 33px;
+    font-family: "Exo 2 Semi Bold", serif;
+    color: #000000;
+    margin: 25px auto 20px;
+    text-align: left;
+    display: -webkit-box;
+}
+
+.register__icons, .login__icons{
+    margin: auto;
+}
+
+.register__social img, .login__social img{
+    padding-right: 5px;
+}
+
+.register__security, .login__security{
+    width: 440px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+}
+
+.register__security-text, .login__security-text{
+    position: relative;
+    padding-left: 30px;
+}
+
+.register__security-text:before, .login__security-text:before{
+    content: url('../../assets/img/register_login/lock.png');
+    position: absolute;
+    left: 5px;
+}
+
+
+
+
