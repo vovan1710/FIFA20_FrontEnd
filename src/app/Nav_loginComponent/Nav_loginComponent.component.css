@@ -6,15 +6,7 @@
     position: relative;
     color: #fff;
 }
-.nav:after{
-    content: '';
-    position: absolute;
-    left: 1097px;
-    bottom: -20px;
-    top: 60px;
-    border: 20px solid transparent;
-    border-top: 27px solid #273f50;
-}
+
 
 .blocks-links{
     
@@ -41,42 +33,39 @@
 }
 
 .autorization{
-    padding-right: 20px;
+    justify-content: space-around;
+    width: 100%;
 }
 .autorization__item{
     font-style: normal;
     color: #fff;
-    position: relative;
 }
 
-.autorization__item_entrance{
-    padding-right: 100px;
+.autorization__item_bonus{
+    padding: 0 5px 0 5px;
 }
 
-.autorization__item_entrance:before{
-    content: url("../../assets/img/entrance.png");
-    display: block;
-    margin-right: 14px;
-    left: -30px;
-    top: 5px;
-    position: absolute;
+.autorization__item_bonus:hover{
+    background-color: #526573;
 }
-.autorization__item-registration:before{
-    content: url("../../assets/img/registration.png");
+
+.autorization__item_bonus:before{
+    content: url("../../assets/img/nav-gift.png");
+    display: block;
+    margin-right: 10px;
+    margin-top: 3px;
+}
+.autorization__item-email:after{
+    content: url("../../assets/img/nav-arrow.png");
     display: block;
     margin-right: 14px;
-    left: -35px;
-    top: 4px;
-    position: absolute;
+    padding-left: 10px;
 }
 
 .autorization__item:hover{
-    color: #fddb17!important;
     transition:all 1s;
     text-decoration:none;
 }
 
-.navbar-noarrow:after{
-    display: none;
-}
+
 

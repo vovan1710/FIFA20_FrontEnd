@@ -1,0 +1,172 @@
+/* --------------------------Specification--------------------- */
+h3{
+    font-size: 35px;
+    letter-spacing: 0.1em;
+    line-height: 30px;
+    font-family: 'Exo 2 Bold' ,serif;
+}
+
+/* --------------------------BONUS INFO--------------------- */
+
+.bonus-info{
+    background: url("../../assets/img/bonus_page/back.jpg") no-repeat center top /cover;
+    padding-bottom: 70px;
+}
+
+.head{
+    background-color: rgba(251, 201, 13, 0.94);
+    padding: 15px 0 15px;
+    color:#273f50;
+    font-weight: normal;
+    margin-bottom: 70px;
+    line-height: 20px;
+}
+
+.head__header{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: -5px;
+}
+
+.head__text{
+    border: 2px dashed #273f50;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    margin-left: 14px;
+    width: 100%;
+    
+}
+
+.head__text-first{
+    padding-bottom: 1px;
+}
+
+.head__text span{
+    font-family: 'Exo 2 Bold', serif;
+}
+
+.bonus-status__data_wrapp{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.bonus-status__data{
+    font-size: 48px;
+    color: #fff;
+    font-family: 'Exo 2 Bold', serif;
+}
+.bonus-status__orders span{
+    color: #fddc15;
+}
+#bonus-status__current-order{
+    padding-left: 10px;
+}
+
+.bonus-status__quantity{
+    padding-top: 35px;
+    font-family: 'Exo 2', serif;
+}
+
+.bonus-status__quantity h2{
+    font-size: 48px;
+    color:#fddc15;
+    line-height: 30px;
+    padding-right: 20px;
+}
+
+.bonus-status__quantity span{
+    font-family: 'Exo 2 Bold', serif;
+    padding-right: 16px;
+}
+
+/* -------------------------Border-line---------------------- */
+.bonus-info:after{
+    content: '';
+    display: block;
+    background: url('../../assets/img/bonus_page/border-line.png') no-repeat center center;
+    width: 100%;
+    height: 200px;
+    position: relative;
+    margin-bottom: -170px;
+    z-index: 9;
+}
+/* -------------------------History---------------------- */
+
+.history{
+    padding: 50px 0 30px;
+    background: rgba(23,39,72,1);
+    background: -moz-linear-gradient(-45deg, rgba(23,39,72,1) 0%, rgba(23,39,72,1) 29%, rgba(22,57,153,1) 87%, rgba(22,57,153,1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(23,39,72,1)), color-stop(29%, rgba(23,39,72,1)), color-stop(87%, rgba(22,57,153,1)), color-stop(100%, rgba(22,57,153,1)));
+    background: -webkit-linear-gradient(-45deg, rgba(23,39,72,1) 0%, rgba(23,39,72,1) 29%, rgba(22,57,153,1) 87%, rgba(22,57,153,1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(23,39,72,1) 0%, rgba(23,39,72,1) 29%, rgba(22,57,153,1) 87%, rgba(22,57,153,1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(23,39,72,1) 0%, rgba(23,39,72,1) 29%, rgba(22,57,153,1) 87%, rgba(22,57,153,1) 100%);
+    background: linear-gradient(135deg, rgba(23,39,72,1) 0%, rgba(23,39,72,1) 29%, rgba(22,57,153,1) 87%, rgba(22,57,153,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#172748', endColorstr='#163999', GradientType=1 );
+}
+
+.history h3{
+    color: #fddb17;
+    padding-bottom: 35px;
+}
+
+#history__orders {
+    font-family: 'Exo 2', sans-serif;
+    border: 1px solid #fddb17;
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+}
+  
+#history__orders td, #history__orders th {
+    border: 1px solid #fddb17;
+    text-align: center;
+    padding: 18px 0 21px;
+    letter-spacing: 0.1em;
+
+}
+
+#history__orders tr:nth-child(even){
+    background: transparent;
+}
+
+#history__orders tr:hover {
+    background-color: #172749;
+}
+
+#history__orders tr:first-child:hover{
+    background: transparent;
+}
+
+#history__orders th {
+    padding: 22px 0 26px;
+    text-align: center;
+    background: transparent;
+    font-family: 'Exo 2 Bold', serif;
+    color: white;
+    font-size: 24px;
+}
+
+.page-btns{
+    padding-top: 30px;
+    justify-content: flex-end;
+}
+
+.page-btn{
+    width: 25px;
+    color: #000;
+    border-radius: 2px;
+    background-color: #fafafa;
+    text-align: center;
+    margin-right: 5px;
+    font-size: 13px;
+    text-align: center;
+
+}
+
+.page-btn_active{
+    background-color: #89a6c8;
+}
