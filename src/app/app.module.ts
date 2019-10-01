@@ -8,6 +8,7 @@ import { NavComponentComponent } from './NavComponent/NavComponent.component';
 import { FooterComponent } from './footer/footer.component';
 import { Nav_loginComponentComponent } from './Nav_loginComponent/Nav_loginComponent.component';
 import { BonusComponentComponent } from './BonusComponent/BonusComponent.component';
+import { OrdersComponentComponent } from './OrdersComponent/OrdersComponent.component';
 
 @NgModule({
    declarations: [
@@ -16,7 +17,8 @@ import { BonusComponentComponent } from './BonusComponent/BonusComponent.compone
       NavComponentComponent,
       FooterComponent,
       Nav_loginComponentComponent,
-      BonusComponentComponent
+      BonusComponentComponent,
+      OrdersComponentComponent
    ],
    imports: [
       BrowserModule,

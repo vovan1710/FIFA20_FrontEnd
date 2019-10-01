@@ -1,0 +1,86 @@
+h3{
+    font-size: 18px;
+    letter-spacing: 0em;
+    font-family: 'Exo 2 Semi Bold', serif;
+}
+
+h2{
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    font-family: 'Exo 2 Semi Bold', serif;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+section{
+    padding: 48px 0 58px;
+    background: url("../../assets/img/order_page/background.jpg") no-repeat center top /cover;
+}
+
+.panel{
+    background-color: #eff2f4;
+    
+}
+
+.header{
+    background-color: #ff9c13;
+    text-align: center;
+    color: #fff;
+    padding: 13px 0 13px;
+}
+
+.order{
+    border-top: 1px solid #fddb17;
+    padding-top: 46px;
+}
+.order-status{
+    margin: auto;
+}
+
+.order-info{
+    padding: 25px 0 78px;
+    width: 37%;
+    margin: auto;
+    color: #8691a3;
+    font-size: 16px;
+    letter-spacing: 0.01em;
+    line-height: 38px;
+    font-family: 'Exo 2 Semi Bold', serif;
+}
+
+.order-buttons{
+    margin-top: 20px;
+}
+
+button{
+    width: 198px;
+    font-size: 16px;
+    font-family: 'Exo 2 Bold', serif;
+    text-align: center;
+    border-radius: 5px;
+    padding: 0px;
+}
+
+.order-cancel{
+    border: 1px solid #273f50;
+    margin-right: 30px;
+    background-color: transparent;
+    color: #273f50;
+}
+
+.order-cancel:hover{
+    transition:all 0.5s;
+    color: #fff;
+    background: #273f50;
+}
+
+.order-pay{
+    background-color: #273f50;
+    color: #fff;
+    border:none;
+}
+
+.order-pay:hover{
+    box-shadow:inset 0px 0px 10px 0px rgba(239,242,244,1);
+    transition:all 0.5s;
+}

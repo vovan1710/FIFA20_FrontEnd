@@ -48,6 +48,10 @@ h3{
     font-family: 'Exo 2 Bold', serif;
 }
 
+.bonus-status{
+    margin-bottom: -35px;
+}
+
 .bonus-status__data_wrapp{
     height: 100%;
     display: flex;
@@ -111,6 +115,7 @@ h3{
 .history h3{
     color: #fddb17;
     padding-bottom: 35px;
+    padding-top: 20px;
 }
 
 #history__orders {
