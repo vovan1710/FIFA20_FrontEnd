@@ -6,9 +6,9 @@ import { AppComponent } from './app.component';
 import { MainComponentComponent } from './MainComponent/MainComponent.component';
 import { NavComponentComponent } from './NavComponent/NavComponent.component';
 import { FooterComponent } from './footer/footer.component';
-import { Nav_loginComponentComponent } from './Nav_loginComponent/Nav_loginComponent.component';
 import { BonusComponentComponent } from './BonusComponent/BonusComponent.component';
 import { OrdersComponentComponent } from './OrdersComponent/OrdersComponent.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
    declarations: [
@@ -16,12 +16,12 @@ import { OrdersComponentComponent } from './OrdersComponent/OrdersComponent.comp
       MainComponentComponent,
       NavComponentComponent,
       FooterComponent,
-      Nav_loginComponentComponent,
       BonusComponentComponent,
       OrdersComponentComponent
    ],
    imports: [
       BrowserModule,
+      FontAwesomeModule,
       AppRoutingModule
    ],
    providers: [],

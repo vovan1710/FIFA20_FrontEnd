@@ -1,3 +1,4 @@
+
 <div class="nav">
   <div class="container">
     <div class="row">
@@ -14,8 +15,8 @@
             </li>
         </ul>
       </div>
-
-      <div class="col-lg-5 d-flex ml-auto">
+<!-- NOT LOGINED -->
+      <div *ngIf="!logedIn()" class="col-lg-5 d-flex ml-auto">
           <div class="autorization d-flex ml-auto">
             <li>
                 <a  id="login" class="autorization__item autorization__item_entrance d-flex">Вход</a>
@@ -24,10 +25,21 @@
             <li>
                 <a  id="register" class="autorization__item autorization__item-registration d-flex ">Регистрация</a>
             </li>
-              
-          
           </div>
       </div>
+<!-- LOGINED -->
+      <div *ngIf="logedIn()" class="col-lg-5 d-flex ml-auto">
+        <div class="autorization-loged d-flex">
+          <li>
+              <a   class="autorization__item-loged autorization__item_bonus d-flex">Бонусы</a>
+          </li>
+
+          <li>
+              <a  class="autorization__item-loged autorization__item-email d-flex ">test@gmail.com</a>
+          </li>
+        </div>
+     </div>
+
     </div>
   </div>
 </div>

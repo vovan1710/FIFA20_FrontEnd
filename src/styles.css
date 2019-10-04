@@ -162,7 +162,6 @@ h6{
 }
 
 .button{
-    height: 74px;
     width: 370px;
     text-align: center;
     padding-top: 18px;
@@ -182,7 +181,8 @@ h6{
     font-family: "Exo 2 Semi Bold", serif;
     box-shadow: inset -1px 0px 5px 0px rgba(147,147,147,0.91);
     letter-spacing: 0.1em;
-    height: 38px;   
+    height: 38px;  
+    width: 220px;
 }
 
 input::-webkit-outer-spin-button,

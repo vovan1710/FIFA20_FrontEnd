@@ -6,15 +6,6 @@
     position: relative;
     color: #fff;
 }
-.nav:after{
-    content: '';
-    position: absolute;
-    left: 1097px;
-    bottom: -20px;
-    top: 60px;
-    border: 20px solid transparent;
-    border-top: 27px solid #273f50;
-}
 
 .blocks-links{
     
@@ -76,7 +67,40 @@
     text-decoration:none;
 }
 
-.navbar-noarrow:after{
-    display: none;
+
+/* ----------------------------------LOGined----------------------------- */
+
+.autorization-loged{
+    justify-content: space-around;
+    width: 100%;
+}
+.autorization__item-loged{
+    font-style: normal;
+    color: #fff;
 }
 
+.autorization__item_bonus{
+    padding: 0 5px 0 5px;
+}
+
+.autorization__item_bonus:hover{
+    background-color: #526573;
+}
+
+.autorization__item_bonus:before{
+    content: url("../../assets/img/nav-gift.png");
+    display: block;
+    margin-right: 10px;
+    margin-top: 3px;
+}
+.autorization__item-email:after{
+    content: url("../../assets/img/nav-arrow.png");
+    display: block;
+    margin-right: 14px;
+    padding-left: 10px;
+}
+
+.autorization__item-loged:hover{
+    transition:all 1s;
+    text-decoration:none;
+}

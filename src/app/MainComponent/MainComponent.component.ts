@@ -11,6 +11,16 @@ declare var $: any;
 export class MainComponentComponent implements OnInit {
 
   constructor() { }
+  
+
+  logedIn():  Boolean{
+    return true;
+  }
+
+  OrderCreated(): Boolean{
+    return true;
+  }
+
 
   ngOnInit() {
     
@@ -52,14 +62,39 @@ export class MainComponentComponent implements OnInit {
             });
     });
     
+        $(document).ready(function(){
+      $.fn.first_section_show = function(){
+          $('.first-section, .advanteges, .buying, .opinions').fadeIn(500);
+      }                                                    
+        $.fn.first_section_hide= function(){
+          $('.first-section, .advanteges, .buying, .opinions').css('display', 'none');
+      }
+
+      $.fn.login_show = function(){
+        $('.login').fadeIn(500);
+      }                                          
+      $.fn.login_hide= function(){
+        $('.login').css('display', 'none');
+      }
+
+      $.fn.register_show = function(){
+        $('.register').fadeIn(500);
+      }
+      $.fn.register_hide= function(){
+        $('.register').css('display', 'none');
+      }
+
+    });
+    
+
     //Show and hide block animation
     $(document).ready(function(){
       $.fn.first_section_show = function(){
-          $('.first-section').fadeIn(500);
+          $('.first-section, .advanteges, .buying, .opinions').fadeIn(500);
           $('.nav').removeClass('navbar-noarrow');
       }                                                    
         $.fn.first_section_hide= function(){
-          $('.first-section').css('display', 'none');
+          $('.first-section, .advanteges, .buying, .opinions').css('display', 'none');
           $('.nav').addClass('navbar-noarrow');
       }
 
@@ -96,14 +131,19 @@ export class MainComponentComponent implements OnInit {
     });
       //Register
 
-    $('#register').click(function (){
-      $.fn.register_show();
-      $.fn.login_hide();
-      $.fn.first_section_hide();
+    $(document).ready(function(){
+      $.fn.register = function(){ 
+        $.fn.register_show();
+        $.fn.login_hide();
+        $.fn.first_section_hide();  
+      }
+      $("#register").click(function(){
+        $.fn.register();
+      });
     });
 
     // CLOSE BUTTON
-    $('.register__close').click(function (){
+    $('.item__close').click(function (){
       $.fn.first_section_show();
       $.fn.register_hide();
       $.fn.login_hide();
@@ -121,5 +161,6 @@ export class MainComponentComponent implements OnInit {
 
 
     }
+
 
 }

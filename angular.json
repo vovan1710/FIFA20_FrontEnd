@@ -24,16 +24,23 @@
               "src/assets"
             ],
             "styles": [
-              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "node_modules/jquery-ui-1.12.1/jquery-ui.min.css",
-              "node_modules/jquery.arcticmodal/jquery.arcticmodal-0.3.css",
+              {
+                "input": "./node_modules/bootstrap/dist/css/bootstrap.min.css"
+              },
+              {
+                "input":"node_modules/jquery-ui-1.12.1/jquery-ui.min.css"
+              },
+              {
+                "input": "node_modules/jquery.arcticmodal/jquery.arcticmodal-0.3.css"
+              },
               "src/styles.css"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
               "node_modules/jquery/dist/jquery.js",
-              "node_modules/jquery.arcticmodal/jquery.arcticmodal-0.3.min.js",
-              "node_modules/jquery-ui-1.12.1/jquery-ui.min.js"
+              "node_modules/jquery-ui-1.12.1/jquery-ui.min.js",
+              "node_modules/jquery.arcticmodal/jquery.arcticmodal-0.3.min.js"
+              
             ]
           },
           "configurations": {

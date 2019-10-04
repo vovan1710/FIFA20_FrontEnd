@@ -9,7 +9,9 @@ export class NavComponentComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit() {}
+  logedIn():  Boolean{
+    return false;
   }
-
-}
+  
+  }

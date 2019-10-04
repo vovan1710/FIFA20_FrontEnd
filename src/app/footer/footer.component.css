@@ -9,3 +9,9 @@
     letter-spacing: 0em;
     display: flex;
 }
+
+@media screen and (max-width: 1200px){
+    .footer{
+        font-size: 12px;
+    }
+}

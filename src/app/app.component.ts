@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import  '@fortawesome/free-solid-svg-icons';
 declare var $: any;
 import 'jquery';
 import 'jquery-ui';
@@ -9,9 +10,11 @@ import 'jquery-ui';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent implements OnInit {
   constructor (
   ) {}
+
 
   ngOnInit() {
 
@@ -29,6 +32,8 @@ export class AppComponent implements OnInit {
 
     
   }
+
+  
 }
 
 
