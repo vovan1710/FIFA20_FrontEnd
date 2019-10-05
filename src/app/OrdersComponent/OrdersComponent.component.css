@@ -1,47 +1,46 @@
 h3{
-    font-size: 18px;
-    letter-spacing: 0em;
-    font-family: 'Exo 2 Semi Bold', serif;
-}
-
-h2{
-    font-size: 20px;
+    font-size: 24px;
     letter-spacing: 0.1em;
     font-family: 'Exo 2 Semi Bold', serif;
-    text-align: center;
-    padding-bottom: 20px;
+    padding-right: 12px;
+    color: #f7f8fa;
+}
+
+.yellow{
+    color: #fddc15;
 }
 
 section{
-    padding: 48px 0 58px;
-    background: url("../../assets/img/order_page/background.jpg") no-repeat center top /cover;
+    background: url("../../assets/img/order_page/back.jpg") no-repeat center top /cover;
+    padding-bottom: 150px;
+}
+
+.head{
+    padding: 40px 0 40px;
+    background-color: rgba(7, 11, 23, 0.18);
+    margin-bottom: 105px;
+    color: #f7f3f3;
 }
 
 .panel{
-    background-color: #eff2f4;
+    background-color: transparent;
+    border: 1px solid #fddb17;
     
 }
 
-.header{
-    background-color: #ff9c13;
-    text-align: center;
-    color: #fff;
-    padding: 13px 0 13px;
+.order__header{
+    padding-bottom: 30px;
 }
 
-.order{
-    border-top: 1px solid #fddb17;
-    padding-top: 46px;
-}
 .order-status{
     margin: auto;
 }
 
 .order-info{
-    padding: 25px 0 78px;
+    padding: 50px 0 55px;
     width: 37%;
     margin: auto;
-    color: #8691a3;
+    color: #f7f8fa;
     font-size: 16px;
     letter-spacing: 0.01em;
     line-height: 38px;
@@ -49,7 +48,11 @@ section{
 }
 
 .order-buttons{
-    margin-top: 20px;
+    margin-top: 25px;
+}
+
+.order__row{
+    padding-bottom: 10px;
 }
 
 button{
@@ -62,20 +65,20 @@ button{
 }
 
 .order-cancel{
-    border: 1px solid #273f50;
+    border: 2px solid #fefefd;
     margin-right: 30px;
     background-color: transparent;
-    color: #273f50;
+    color: #fefefd;
 }
 
 .order-cancel:hover{
     transition:all 0.5s;
     color: #fff;
-    background: #273f50;
+    background: #91232d;
 }
 
 .order-pay{
-    background-color: #273f50;
+    background-color: #91232d;
     color: #fff;
     border:none;
 }

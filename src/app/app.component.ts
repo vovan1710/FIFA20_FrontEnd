@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import  '@fortawesome/free-solid-svg-icons';
 declare var $: any;
 import 'jquery';
 import 'jquery-ui';
+import { faFilm } from '@fortawesome/free-solid-svg-icons';
 
 
 @Component({
@@ -12,6 +12,7 @@ import 'jquery-ui';
 })
 
 export class AppComponent implements OnInit {
+  filmIcon = faFilm;
   constructor (
   ) {}
 

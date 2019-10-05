@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 declare var $: any;
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 
 
@@ -9,6 +10,7 @@ declare var $: any;
   styleUrls: ['./MainComponent.component.css']
 })
 export class MainComponentComponent implements OnInit {
+  SendIcon = faArrowRight;
 
   constructor() { }
   
@@ -62,6 +64,7 @@ export class MainComponentComponent implements OnInit {
             });
     });
     
+    // SHOW AND HIDE FIRST SEC , LOGIIN ,REGISTER
         $(document).ready(function(){
       $.fn.first_section_show = function(){
           $('.first-section, .advanteges, .buying, .opinions').fadeIn(500);
@@ -157,6 +160,67 @@ export class MainComponentComponent implements OnInit {
       } else 
         $('#message').html('Пароли не совпадают').css('color', 'red');
     });
+
+    //RANKING
+
+//     var rating = document.querySelector('.rating'),
+//     ratingItem = document.querySelectorAll('.rating-item');
+
+// rating.onclick = function(e){
+//   var target = e.target;
+//   if(target.classList.contains('rating-item')){
+//     removeClass(ratingItem,'current-active')
+//     target.classList.add('active','current-active');
+//   }
+// }
+
+// rating.onmouseover = function(e) {
+//   var target = e.target;
+//   if(target.classList.contains('rating-item')){
+//     removeClass(ratingItem,'active')
+//     target.classList.add('active');
+//     mouseOverActiveClass(ratingItem)
+//   }
+// }
+// rating.onmouseout = function(){
+//   addClass(ratingItem,'active');
+//   mouseOutActiveClas(ratingItem);
+// }
+
+// function removeClass(arr) {
+//   for(var i = 0, iLen = arr.length; i <iLen; i ++) {
+//     for(var j = 1; j < arguments.length; j ++) {
+//       ratingItem[i].classList.remove(arguments[j]);
+//     }
+//   }
+// }
+// function addClass(arr) {
+//   for(var i = 0, iLen = arr.length; i <iLen; i ++) {
+//     for(var j = 1; j < arguments.length; j ++) {
+//       ratingItem[i].classList.add(arguments[j]);
+//     }
+//   }
+// }
+
+// function mouseOverActiveClass(arr){
+//   for(var i = 0, iLen = arr.length; i < iLen; i++) {
+//     if(arr[i].classList.contains('active')){
+//       break;
+//     }else {
+//       arr[i].classList.add('active');
+//     }
+//   }
+// }
+
+// function mouseOutActiveClas(arr){
+//   for(var i = arr.length-1; i >=1; i--) {
+//     if(arr[i].classList.contains('current-active')){
+//       break;
+//     }else {
+//       arr[i].classList.remove('active');
+//     }
+//   }
+// }
 
 
 

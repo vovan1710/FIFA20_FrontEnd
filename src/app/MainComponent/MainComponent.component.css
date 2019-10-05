@@ -501,9 +501,25 @@ transition: all, 3s;
     padding-bottom: 8px;
 }
 
-.create-opinion__star-wrapper p{
-    padding-right: 10px;
+.rating{
+    padding-left: 10px;
 }
+
+
+
+.rating-item{
+    background: url('../../assets/img/empy_star.png') no-repeat center center /100%;
+    display: block; /*  Рисунок как блочный элемент */
+    margin-right: 6px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.rating-item.active{
+    background: url('../../assets/img/star_full.png') no-repeat center center /100%;
+}
+
+
 
 .create-opinion__text textarea{
     width: 90%;
@@ -512,6 +528,27 @@ transition: all, 3s;
     letter-spacing: 0.1em;
     line-height: 20px;
     padding: 5px 0 0 15px;
+    position: relative;
+}
+
+.create-opinion button{
+    border: none;
+    padding: 0;
+}
+
+.create-opinion fa-icon{
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    color: white;
+    background-color: #179371;
+    position: absolute;
+    font-size: 17px;
+    right: 125px;
+    top: 15px;
+    padding-top: 2px;
+
 }
 
 
