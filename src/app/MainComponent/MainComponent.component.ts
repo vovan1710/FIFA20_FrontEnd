@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 declare var $: any;
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { AuthService } from '../_services/auth.service';
+import { AlertifyService } from '../_services/alertify.service';
 
 
 
@@ -11,8 +13,11 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 })
 export class MainComponentComponent implements OnInit {
   SendIcon = faArrowRight;
-
-  constructor() { }
+  model: any = {};
+  constructor(
+    private authService: AuthService,
+    private alertifyService: AlertifyService
+  ) { }
   
 
   logedIn():  Boolean{
@@ -23,6 +28,23 @@ export class MainComponentComponent implements OnInit {
     return true;
   }
 
+  loginWithEmail() {
+    this.authService
+      .loginWithEmail(this.model.email, this.model.password)
+      .subscribe(
+        value => this.alertifyService.success('Successfully loged in.'),
+        err => this.alertifyService.error('Something went wrong')
+      );
+  }
+
+  onSubmit() {
+    this.authService.register(this.model).subscribe(
+      user => this.alertifyService.success('Succsesfully registered!'),
+      error => {
+        this.alertifyService.error('Something went wrong. Try again!');
+      }
+    );
+  }
 
   ngOnInit() {
     
