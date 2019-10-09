@@ -8,15 +8,15 @@
                 <div class="form-wrapper">
                     <div class="row">
                         <div class="col-lg-10 m-auto">
-                            <form #myForm="ngForm" (ngSubmit)="onSubmit()">
+                            <form>
                                 <h2 class="register__header">Регистрация</h2>
                                 <div class="register__item">
                                     <label for="register__email">Электронная почта</label>
-                                    <input type="email" class="register__input" id="register__email" [(ngModel)]="model.email" required >
+                                    <input type="email" class="register__input" id="register__email" required >
                                 </div>
                                 <div class="register__item">
                                     <label for="register__password">Пароль</label>
-                                    <input type="password" class="register__input" id="register__password" [(ngModel)]="model.password" required>
+                                    <input type="password" class="register__input" id="register__password" required>
                                 </div>
                                 <div class="register__item">
                                         <div class="register__check d-flex">
@@ -65,15 +65,15 @@
                 <div class="form-wrapper">
                     <div class="row">
                         <div class="col-lg-10 m-auto">
-                            <form #loginModel="ngForm" (ngSubmit)="loginWithEmail()">
+                            <form >
                                 <h2 class="login__header">Вход на FutDron</h2>
                                 <div class="login__item">
                                     <label for="login__email">Электронная почта</label>
-                                    <input type="email" class="login__input" id="login__email" [(ngModel)]="model.email" required >
+                                    <input type="email" class="login__input" id="login__email" required >
                                 </div>
                                 <div class="login__item">
                                     <label for="login__password">Пароль</label>
-                                    <input type="password" class="login__input" id="login__password" [(ngModel)]="model.password" required>
+                                    <input type="password" class="login__input" id="login__password" required>
                                 </div>
                                 <button type="submit" class="login__button">Войти</button>
                                 <div class="login__question">
