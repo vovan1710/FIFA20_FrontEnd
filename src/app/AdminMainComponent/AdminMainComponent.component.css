@@ -1,0 +1,88 @@
+section{
+    background-color: #0b0340;
+    color: #fff;
+    padding: 30px 0 30px;
+}
+
+a{
+    color: #fff;
+    text-decoration: underline;
+}
+a:hover{
+    color: #fddb17;
+}
+
+#history__orders {
+    margin-top: 20px;
+    font-family: 'Exo 2', sans-serif;
+    border: 1px solid #fddb17;
+    width: 100%;
+    color: #fff;
+    font-size: 15px;
+}
+  
+#history__orders td, #history__orders th {
+    border: 1px solid #fddb17;
+    text-align: center;
+    padding: 10px 0 11px;
+    letter-spacing: 0.1em;
+
+}
+
+#history__orders tr:nth-child(even){
+    background: transparent;
+}
+
+#history__orders tr:nth-child(2n) {
+    background: #0b072b ;
+  }
+
+#history__orders tr:hover {
+    background-color: #172749;
+}
+
+#history__orders tr:first-child:hover{
+    background: transparent;
+}
+
+#history__orders th {
+    padding: 22px 0 26px;
+    text-align: center;
+    background: transparent;
+    font-family: 'Exo 2 Bold', serif;
+    color: white;
+    font-size: 20px;
+}
+
+.more{
+    text-align: right;
+}
+
+.input-group-text{
+    font-weight: 800!important;
+}
+
+.btn-change{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.input-group{
+    align-items: center;
+}
+
+input{
+    max-width: 20%;
+}
+
+.price__item{
+    margin-bottom: 30px;
+}
+
+.status__active{
+    color: green;
+}
+
+.status__off{
+    color: red;
+}

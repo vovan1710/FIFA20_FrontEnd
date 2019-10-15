@@ -103,11 +103,17 @@
 }
 
 /* Specefication */
+html{
+    overflow-x: hidden;
+}
 body{
     font-size: 18px;
     font-family: "Exo 2",sans-serif;
     letter-spacing: 0.1em;
     line-height: 30px;
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
 }
 ul,li,a{
     font-family: "Exo 2",sans-serif;
@@ -210,4 +216,3 @@ input::-webkit-inner-spin-button {
   .ui-slider-horizontal .ui-slider-range-max{
       background-color: #939393;
   }
-

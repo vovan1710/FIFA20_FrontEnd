@@ -107,13 +107,12 @@
 <!-- ------------------------------------MAIN PAGE-------------------------- -->
 
 <section class="first-section" id="first-section" >
-    <div *ngIf="!logedIn()" class="nav-arrow"></div>
     <div class="container">
         <div class="row">
-            <div class="col-lg-4">
+            <div class="col-sm-7 col-md-4 ">
                 <img src="../../assets/img/logo-full.png" alt="Logotype" class="logo">
             </div>
-            <div *ngIf="!logedIn()" class="col-lg-3 ml-auto">
+            <div *ngIf="!logedIn()" class="col-sm-5 col-md-4 col-lg-3 ml-auto">
                 <div class="bonus-info ml-auto">
                     <p class="bonus-info__text">
                         Регистрация займет не более <span>2 минут!</span> 
@@ -129,12 +128,12 @@
                 Продажа монет <br> в  FIFA 20 Ultimate team
             </h1>
             <div class="row">
-                <div class="col-md-5 col-xl-4">
-                    <a href="#advanteges" class="button read-more-btn">
-                            Узнать подробнее
-                    </a>   
+                <div class="col-sm-6 col-lg-5 col-xl-4">
+                        <a href="#advanteges" class="button read-more-btn">
+                                Узнать подробнее
+                        </a>   
                 </div>
-                <div class="col-lg-4">
+                <div class="col-sm-6 col-lg-4">
                     <a href="#buying" class="button buy-btn">
                             <img src="../../assets/img/basket.png" alt="">
                             Купить монеты
@@ -149,43 +148,51 @@
     <div class="container">
         <h2 class="advanteges-header">Преимущества</h2>
         <div class="row">
-            <div class="col-lg-3">
-                <div class="advantege">
-                    <img src="../../assets/img/price.png" alt="price">
-                    <h5 class="advantege__header advantege__header_price">Цена</h5>
-                    <p class="advantege__text">
-                            Это самая низкая цена на монеты на рынке.
-                    </p>
+            <div class="col-6 col-lg-3">
+                <div class="advantege__wrapp">
+                    <div class="advantege">
+                        <img src="../../assets/img/price.png" alt="price">
+                        <h5 class="advantege__header advantege__header_price">Цена</h5>
+                        <p class="advantege__text">
+                                Это самая низкая цена на монеты на рынке.
+                        </p>
+                    </div>
                 </div>
             </div>
 
-            <div class="col-lg-3">
-                <div class="advantege">
-                    <img src="../../assets/img/fast-delivery.png" alt="fast-delivery">
-                    <h5 class="advantege__header advantege__header_fast-delivery">Доставка</h5>
-                    <p class="advantege__text">
-                            Доставка просходит <br> в считаные минуты. 
-                    </p>
+            <div class="col-6 col-lg-3">
+                <div class="advantege__wrapp">
+                    <div class="advantege">
+                        <img src="../../assets/img/fast-delivery.png" alt="fast-delivery">
+                        <h5 class="advantege__header advantege__header_fast-delivery">Доставка</h5>
+                        <p class="advantege__text">
+                                Доставка просходит <br> в считаные минуты. 
+                        </p>
+                    </div>
                 </div>
             </div>
 
-            <div class="col-lg-3">
-                <div class="advantege">
-                    <img src="../../assets/img/guaranties.png" alt="guaranties">
-                    <h5 class="advantege__header advantege__header_guaranties">Гарантия</h5>
-                    <p class="advantege__text">
-                            100% гарантия от банов и обнулений
-                    </p>
+            <div class="col-6 col-lg-3">
+                <div class="advantege__wrapp">
+                    <div class="advantege">
+                        <img src="../../assets/img/guaranties.png" alt="guaranties">
+                        <h5 class="advantege__header advantege__header_guaranties">Гарантия</h5>
+                        <p class="advantege__text">
+                                100% гарантия от банов и обнулений
+                        </p>
+                    </div>
                 </div>
             </div>
 
-            <div class="col-lg-3">
-                <div class="advantege">
-                    <img src="../../assets/img/security.png" alt="security">
-                    <h5 class="advantege__header advantege__header_security">Безопасность</h5>
-                    <p class="advantege__text">
-                            3–х летний опыт работы и безопасный метод доставки 
-                    </p>
+            <div class="col-6 col-lg-3">
+                <div class="advantege__wrapp">
+                    <div class="advantege">
+                        <img src="../../assets/img/security.png" alt="security">
+                        <h5 class="advantege__header advantege__header_security">Безопасность</h5>
+                        <p class="advantege__text">
+                                3–х летний опыт работы и безопасный метод доставки 
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -195,10 +202,10 @@
             </h4>
             <img src="../../assets/img/line.png" alt="line" class="line-image">
             <div class="row align-items-center">
-                <div class="col-lg-3 discount__percent-image ">
+                <div class="col-sm-3 discount__percent-image ">
                     <img src="../../assets/img/percent.png" alt="percent" >
                 </div>
-                <div class="col-lg-9 text-left">
+                <div class="m-auto col-10 col-sm-9 text-left">
                     <p class="discount__decription">
                         При заказе от <span class="bold-text">1 млн монет,</span>  скидка <span class="bold-text">10 %</span>  <br>
                         При заказе от <span class="bold-text">2 млн монет,</span>  скидка <span class="bold-text">15 %</span> 
@@ -217,14 +224,14 @@
             Купить  монеты FIFA 20
         </h2>
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-md-11 col-lg-6">
                 <form action="">
                     <div class="creating-order">
                         <h6 class="creating-order__header creating-order__header_first">
                             Выберите вашу платформу
                         </h6>
                         <div class="row">
-                            <div class="col-lg-5 col-xl-4">
+                            <div class="col-5 col-sm-5 col-md-4 col-lg-5 col-xl-4">
                                 <label>
                                     <input type="radio" name="console" value="xbox">
                                     <div  class="creating-order__console creating-order__console_xbox">
@@ -235,7 +242,7 @@
                                 </label>
 
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-7 col-sm-4 ps4__xs">
                                 <label>
                                     <input type="radio" name="console" value="xbox" checked>
                                     <div  class="creating-order__console creating-order__console_ps4">
@@ -255,7 +262,7 @@
                         </h6>
                         <div class="creating-order__slider" id="slider-ps4"></div>
                         <div class="row">
-                            <div class="col-lg-6">
+                            <div class="col-sm-6 col-lg-7 col-xl-6">
                                 <div class="creating-order__coins-box">
                                     <p class="creating-order__input-header">
                                         Монет получите:
@@ -264,7 +271,7 @@
                                     <input type="number" id="coins-ps4" class="input creating-order__coins" value="" step="1000">
                                 </div>
                             </div>
-                            <div class="col-lg-6">
+                            <div class="col-sm-6 col-lg-5 col-xl-6">
                                 <div class="creating-order__money-box">
                                     <p class="creating-order__input-header">
                                         Стоимость:
@@ -274,13 +281,13 @@
                                 </div>
                             </div>
                             <div class="creating-order__accept">
-                                <div class="row">
-                                    <div class="col-lg-6">
+                                <div class="row creating-wrapp">
+                                    <div class="col-sm-6 col-lg-6">
                                         <button type='submit' class="creating-order__button button">
                                             Оформить заказ
                                         </button>
                                     </div>
-                                    <div class="col-lg-6">
+                                    <div class="col-sm-6 col-md-9 col-lg-6">
                                         <p class="creating-order__accept-text">
                                             Вы будете переправлены на страницу оплаты, 
                                             после оплаты вы сможете перейти к доставке </p>
@@ -292,7 +299,7 @@
                 </form>
             </div>
 
-            <div class="col-lg-5 ml-auto">
+            <div class="col-md-11 col-lg-5 ml-lg-auto">
                 <div class="order-info">
                         <h6 class="order-info__header">
                             Оформление заказа:
@@ -376,7 +383,7 @@
 
         <form *ngIf="logedIn() && OrderCreated()" class="create-opinion">
             <div class="row">
-                <div class="col-lg-11 offset-lg-1">
+                <div class="col-lg-12">
                     <div class="create-opinion__star-wrapper d-flex">
                         <p>Ваша оценка:</p> 
                         <div class="d-flex rating">
@@ -390,12 +397,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-1">
-                    <div class="opinion__avatar d-flex">
-                        <img src="../../assets/img/avatar.png" alt="avatar">
-                    </div>
-                </div>
-                <div class="col-lg-11">
+                <div class="col-md-12 col-lg-12">
                     <div class="create-opinion__text">
                             <textarea class="create-opinion__area" rows="3" placeholder="Оставьте свой комментарий" required></textarea>
                            <button type="submit"> <fa-icon [icon]="SendIcon"></fa-icon></button> 
@@ -415,12 +417,7 @@
         </div>
         <div class="opinion">
             <div class="row align-items-center">
-                <div class="col-lg-1">
-                    <div class="opinion__avatar d-flex">
-                        <img src="../../assets/img/avatar.png" alt="avatar">
-                    </div>
-                </div>
-                <div class="col-lg-11">
+                <div class="col-sm-12">
                     <div class="opinion__info">
                         <div class="opinion__stars">
                             <img class="opinion__star" src="../../assets/img/smallStarfull.png" alt="small-fullstar">
@@ -447,12 +444,7 @@
         </div>
         <div class="opinion">
                 <div class="row align-items-center">
-                    <div class="col-lg-1">
-                        <div class="opinion__avatar d-flex">
-                            <img src="../../assets/img/avatar.png" alt="avatar">
-                        </div>
-                    </div>
-                    <div class="col-lg-11">
+                    <div class="col-sm-12">
                         <div class="opinion__info">
                             <div class="opinion__stars">
                                 <img class="opinion__star" src="../../assets/img/smallStarfull.png" alt="small-fullstar">
@@ -479,12 +471,7 @@
         </div>
         <div class="opinion">
                 <div class="row align-items-center">
-                    <div class="col-lg-1">
-                        <div class="opinion__avatar d-flex">
-                            <img src="../../assets/img/avatar.png" alt="avatar">
-                        </div>
-                    </div>
-                    <div class="col-lg-11">
+                    <div class="col-sm-12">
                         <div class="opinion__info">
                             <div class="opinion__stars">
                                 <img class="opinion__star" src="../../assets/img/smallStarfull.png" alt="small-fullstar">
@@ -511,12 +498,7 @@
         </div>
         <div class="opinion">
                 <div class="row align-items-center">
-                    <div class="col-lg-1">
-                        <div class="opinion__avatar d-flex">
-                            <img src="../../assets/img/avatar.png" alt="avatar">
-                        </div>
-                    </div>
-                    <div class="col-lg-11">
+                    <div class="col-sm-12">
                         <div class="opinion__info">
                             <div class="opinion__stars">
                                 <img class="opinion__star" src="../../assets/img/smallStarfull.png" alt="small-fullstar">

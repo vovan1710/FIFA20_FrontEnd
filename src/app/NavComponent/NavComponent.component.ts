@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-NavComponent',
@@ -6,12 +7,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./NavComponent.component.css']
 })
 export class NavComponentComponent implements OnInit {
-
+  Hamburger = faBars;
   constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() {
+  }
   logedIn():  Boolean{
     return false;
   }
-  
+  Admin(): Boolean{
+    return false;
   }
+
+  }
+  
+  

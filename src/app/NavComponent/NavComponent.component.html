@@ -1,11 +1,24 @@
 
 <div class="nav">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-7">
-        <ul class="blocks-links d-flex">
+    <nav role='navigation'>
+     <li *ngIf="!Admin()">
+        <a href="#buying" class="welcome_s">Приветствуем на FutDron!</a>
+    </li>
+    <li *ngIf="Admin()">
+        <a href="#buying" class="welcome_s">Рубим бабло!</a>
+    </li>
+    <div id="menuToggle">
+    <input id="hamburg" type="checkbox"/>
+    <span></span>
+    <span></span>
+    <span></span>
+    <div class="navwrapp" id='menu'>
+    <div *ngIf="!Admin()" class="row">
+      <div class="col-md-6 col-lg-7">
+        <ul class="test1 blocks-links d-flex" id="test1">
             <li>
-              <a href="#advanteges" class="blocks-links__item ">Преимущества</a>
+              <a href="#advanteges" class="blocks-links__item d-md-none d-lg-block">Преимущества</a>
             </li>
             <li>
               <a href="#buying" class="blocks-links__item">Купить монеты</a>
@@ -16,7 +29,7 @@
         </ul>
       </div>
 <!-- NOT LOGINED -->
-      <div *ngIf="!logedIn()" class="col-lg-5 d-flex ml-auto">
+      <div *ngIf="!logedIn()" class="col-md-6 col-lg-5 d-flex ml-auto">
           <div class="autorization d-flex ml-auto">
             <li>
                 <a  id="login" class="autorization__item autorization__item_entrance d-flex">Вход</a>
@@ -28,18 +41,36 @@
           </div>
       </div>
 <!-- LOGINED -->
-      <div *ngIf="logedIn()" class="col-lg-5 d-flex ml-auto">
+      <div *ngIf="logedIn()&&!Admin()" class="col-md-6 col-lg-5 d-flex ml-auto">
         <div class="autorization-loged d-flex">
           <li>
               <a   class="autorization__item-loged autorization__item_bonus d-flex">Бонусы</a>
           </li>
 
           <li>
-              <a  class="autorization__item-loged autorization__item-email d-flex ">test@gmail.com</a>
+              <a  class="autorization__item-loged autorization__item-email d-flex ">vgladchenko1710@gmail.com</a>
           </li>
         </div>
      </div>
-
     </div>
+
+<!-- ADMIN PANEL -->
+    <ul *ngIf="logedIn()&&Admin()" class="d-flex admin-nav justify-content-around">
+      <li>
+        <p>Привет Админ!</p>
+      </li>
+      <li>
+        <a href="#price" class="admin-nav__element"> Цена монет</a>
+      </li>
+      <li>
+        <a href="#" class="admin-nav__element">Все заказы</a>
+      </li>
+      <li>
+        <a href="#" class="admin-nav__element"> Пользователи</a>
+      </li>
+    </ul>
+    </div>
+    </div>
+  </nav>
   </div>
 </div>

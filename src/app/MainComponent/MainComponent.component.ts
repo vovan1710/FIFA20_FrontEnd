@@ -31,7 +31,7 @@ export class MainComponentComponent implements OnInit {
       var price = 120; //rub ЦЕНА ЗА 10 ТЫС МОНЕТ   
 
       var minCoin = 10000; //Минимальное количество монет
-      var maxCoin = 5000000 //Максимально количество монет
+      var maxCoin = 2000000 //Максимально количество монет
 
 
 
@@ -161,6 +161,20 @@ export class MainComponentComponent implements OnInit {
         $('#message').html('Пароли не совпадают').css('color', 'red');
     });
 
+    // Гамбургер и затемнение фона.
+    $('#hamburg').click(function(){
+      var btn = $('#hamburg');
+        if (btn.is(':checked')){
+          $('section').toggleClass('shadow');}
+        else{
+          $('section').removeClass('shadow');}
+    });
+ 
+
+  
+
+    }
+    
     //RANKING
 
 //     var rating = document.querySelector('.rating'),
@@ -227,4 +241,3 @@ export class MainComponentComponent implements OnInit {
     }
 
 
-}

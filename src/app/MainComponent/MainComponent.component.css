@@ -1,11 +1,10 @@
 /* ---------------------------------------First-secion------------------------------------------ */
-
-.nav-arrow::after{
+.bonus-info::after{
     content: '';
     position: absolute;
-    left: 1097px;
+    left: 90px;
     bottom: -20px;
-    top: 60px;
+    top: -40px;
     border: 20px solid transparent;
     border-top: 27px solid #273f50;
 }
@@ -13,11 +12,31 @@
 .first-section{
     background: url("../../assets/img/first-section2.jpg") no-repeat center top /cover;
 }
+
+section{
+    position: relative;
+}
+section:after{
+    content: '';
+    background: black;
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+}
+
+.shadow:after{
+    display: block;
+}
 .logo{
     padding-top: 68px;
 }
 
 .bonus-info{
+    position: relative;
     width: 208px;
     color: #273f50;
     margin-top: 32px;
@@ -93,6 +112,10 @@
     letter-spacing: 0.1em;
     text-transform: none;
     padding-bottom: 30px;
+}
+
+.advantege__wrapp{
+    height: 100%;
 }
 
 .advantege{
@@ -324,7 +347,7 @@ transition: all, 3s;
 
 .creating-order__email{
     margin-bottom: 30px;
-    width: 297px;
+    width: 55%;
 }
 
 .creating-order__slider{
@@ -545,7 +568,7 @@ transition: all, 3s;
     background-color: #179371;
     position: absolute;
     font-size: 17px;
-    right: 125px;
+    right: 140px;
     top: 15px;
     padding-top: 2px;
 
@@ -771,15 +794,20 @@ transition: all, 3s;
     left: 5px;
 }
 
+
+
 /* ---------------------MEDIA SCREENS-------------------- */
 
-/* 768-992 */
+/* 992-1200 */
 @media screen and (max-width: 1200px){
     .advantege__header{
         font-size: 23px;
     }
     .input{
-        width: 175px;
+        width: 205px;
+    }
+    .creating-order__email{
+        width: 80%;
     }
     .creating-order__button{
         width: 220px;
@@ -788,4 +816,364 @@ transition: all, 3s;
     .buying{
         padding-bottom: 30px;
     }
+}
+
+/* 768-992 */
+@media screen and (max-width: 992px){
+    h1{
+        font-size: 57px;
+        letter-spacing: 0.03em;
+    }
+    .button{
+        width: 325px;
+    }
+    .buy-btn{
+        margin-left: 0;
+    }
+    .advantege__wrapp{
+        padding-bottom: 20px;
+    }
+    .creating-order__email{
+        width: 62%;
+    }
+    .creating-order__slider{
+        width: 90%;
+    }
+    .input{
+        width: 275px;
+    }
+    .creating-order__accept{
+        padding-left: 12px;
+    }
+    .creating-order__accept-text{
+        padding-top: 10px;
+    }
+    .order-info{
+        margin-left: -15px;
+    }
+    .order-info__header{
+        padding-top: 30px;
+        
+    }
+    .order-info__step, .order-info__bonus{
+        padding-bottom: 20px;
+    }
+    .order-info__bonus:before{
+        top:0;
+        padding-top: 0;
+    }
+    .opinions{
+        padding-top: 30px;
+    }
+    .create-opinion fa-icon{
+        right: 100px
+    }
+}
+
+/* 576-768 */
+@media screen and (max-width: 768px){
+    h1{
+        font-size: 41px;
+        line-height: 60px;
+    }
+    h2 {
+        font-size: 33px;
+        letter-spacing: 0.01em;
+    }
+    h3{
+        letter-spacing: 0.005em;
+        font-size: 1.4rem;
+    }
+    .main-info{
+        padding-bottom: 60px;
+    }
+    .bonus-info::after{
+        display: none;
+    }
+    .bonus-info{
+        width: 155px;
+        margin-top: 15px;
+        line-height: 17px;
+    }
+    .logo{
+        height: auto;
+        width: 90%;
+        padding-top: 25px;
+    }
+    .main-header{
+        padding: 20px 0 30px;
+    }
+    .button{
+        width: 243px;
+        font-size: 20px;
+        letter-spacing: 0.05em;
+        padding-top: 11px;
+        padding-bottom: 12px;
+    }
+    .read-more-btn{
+        padding-bottom: 15px;
+    }
+
+    .advanteges{
+        padding: 40px 0 60px;
+    }
+    .advanteges-header, .buying-header{
+        font-size: 32px;
+        letter-spacing: 0.03em;
+        padding-bottom: 25px;
+    }
+    .advantege img{
+        height: auto;
+        width: 22%;
+    }
+    .advantege{
+        padding: 20px 0 20px;
+    }
+    .advantege__header{
+        padding: 10px 0 7px;
+    }
+    .advantege__text{
+        font-size: 1rem;
+        letter-spacing: 0.01em;
+    }
+    .discount{
+        margin-top: 20px;
+        letter-spacing: 0.01em;
+    }
+    .discount__header{
+        font-size: 25px;
+        letter-spacing: 0.01em;
+    }
+    .discount img{
+        height: auto;
+        width: 55%;
+    }
+    .discount__decription{
+        font-size: 18px;
+    }
+    .discount__text-atention{
+        width: 480px;
+        text-align: center;
+        padding-top: 10px;
+    }
+    .buying{
+        padding-top: 40px;
+    }
+    .input{
+        width: 222px;
+    }
+    .creating-order__email{
+        width: 62%;
+    }
+    .creating-wrapp{
+        align-items: center;
+    }
+    .order-info__step{
+        font-size: 15px;
+        line-height: 15px;
+    }
+    .order-info__step:before{
+        height: 20px;
+        width: 20px;
+        top: 0px;
+        left: 20px;
+        top: -2px;
+    }
+    .order-info__bonus{
+        font-size: 15px;
+        line-height: 19px;
+    }
+    .order-info__bonuses{
+        padding-top: 10px;
+    }
+    .order-info__bonus::before{
+        top:2px;
+    }
+    .create-opinion fa-icon{
+        right: 80px
+    }
+}
+
+/* 320-576 */
+@media screen and (max-width: 576px){
+    .first-section{
+        padding:10px 0 50px;
+    }
+    .bonus-info{
+        display: none;
+    }
+    h1{
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .button{
+        margin: auto;
+    }
+    .read-more-btn{
+        margin-left: -121px;
+        position: absolute;
+        top: 80px;
+        left: 50%;
+    }
+    .advanteges{
+        padding: 25px 0 35px;
+    }
+    .advanteges-header{
+        font-size: 25px;
+        text-align: center;
+        padding-bottom: 10px;
+        border-bottom: 1px solid;
+    }
+    .advantege{
+        border: none;
+        padding: 20px 0 5px;
+    }
+    .advantege__wrapp{
+        padding-bottom: 0;
+    }
+    .advantege__header{
+        font-size: 16px;
+    }
+    .advantege__header_fast-delivery{
+        padding-top: 13px;
+    }
+    .advantege__header_security{
+        padding-top: 8px;
+    }
+    .discount{
+        padding: 20px 0 31px;
+    }
+    .discount__percent-image{
+        margin-left: 0;
+        text-align: center;
+    }
+    .discount__percent-image img{
+        width: 22%;
+    }
+    .discount__header{
+        padding-bottom: 0;
+    }
+    .discount__decription{
+        font-size: 17px;
+    }
+    .discount__text-atention{
+        font-size: 17px;
+        width: 255px;
+        padding-top: 17px;
+        line-height: 21px;
+    }
+    .buying{
+        padding: 30px 0 15x;
+    }
+    .buying-header{
+        font-size: 24px;
+        text-align: center;
+        padding-bottom: 10px;
+        border-bottom: 1px solid;
+    }
+    .creating-order__header::before{
+        height: 28px;
+        width: 28px;
+        font-size: 19px;
+        padding-top: 0;
+        top: 2px;
+    }
+    .creating-order__header{
+        font-size: 18px;
+        margin: 15px 0 17px;
+        padding-left: 35px;
+        letter-spacing: 0.01em;
+        line-height: 25px;
+    }
+    .creating-order__console{
+        width: 145px;
+        height: 145px;
+        letter-spacing: 0;
+        font-size: 20px;
+        margin-bottom: 10px;
+        line-height: 20px;
+    }
+    
+    .creating-order__image-xbox, .creating-order__image-xbox-green{
+        padding-bottom: 4px;
+    }
+    .creating-order__image-ps4, .creating-order__image-ps4-blue{
+        padding-bottom: 6px;
+    }
+    .ps4__xs{
+        padding-left: 5px;
+    }
+    .creating-order__email{
+        margin-bottom: 5px;
+    }
+    .creating-order__slider{
+        margin-bottom: 25px;
+        margin-top: 33px;
+        width: 93%;
+    }
+    .creating-order__money-box{
+        margin-left: 0;
+    }
+    .creating-order__coins-box{
+        margin-bottom: 15px;
+    }
+    .creating-order__rubl-icon{
+        left: 30px;
+    }
+    .creating-order__money{
+        padding-left: 51px;
+    }
+    .input{
+        width: 93%;
+    }
+    .creating-order__button{
+        margin: 0;
+        width: 89%;
+    }
+    .creating-order__accept-text{
+        width: 89%;
+    }
+    .order-info__header{
+        padding-top: 15px;
+        margin-bottom: 15px;
+    }
+    .opinions{
+        padding: 25px 0 35px;
+    }
+    .opinions-header{
+        font-size: 24px;
+        letter-spacing: 0;
+    }
+    .average-rank{
+        padding: 10px 0 10px; 
+    }
+    .average-rank__star{
+        width: auto;
+        height: 23px;
+        
+    }
+    .average-rank__grade{
+        line-height: 29px;
+        padding-left: 10px;
+    }
+    .header-wrap{
+        margin-bottom: 0;
+    }
+    .opinion{
+        padding-top: 10px;
+    }
+    .next-opinion{
+        margin-top: 20px;
+    }
+    .create-opinion{
+        padding-top: 10px;
+    }
+    .create-opinion fa-icon{
+        right: 25px
+    }
+    .create-opinion__text textarea{
+        width: 100%;
+        letter-spacing: 0;
+    }
+
 }

@@ -1,0 +1,113 @@
+<section >
+  <div class="container">
+    <h4>Последние заказы</h4>
+
+    <table id="history__orders">
+      <tr>
+        <th>Дата</th>
+        <th>Время</th>
+        <th>Номер</th>
+        <th>Сума в Р</th>
+        <th>Монеты</th>
+        <th>Статус</th>
+        <th>E-mail</th>
+        <th>Регистрация</th>
+      </tr>
+      <tr>
+        <td>27.10.19</td>
+        <td>17:00</td>
+        <td>179218</td>
+        <td>1400</td>
+        <td>15000</td>
+        <td>К оплате</td>
+        <td>vgladchenko@gmail.com</td>
+        <td>Нет</td>
+      </tr>
+      <tr>
+        <td>27.10.19</td>
+        <td>17:00</td>
+        <td>179218</td>
+        <td>1400</td>
+        <td>15000</td>
+        <td>К оплате</td>
+        <td>vgladchenko@gmail.com</td>
+        <td>Нет</td>
+      </tr>
+      <tr>
+        <td>27.10.19</td>
+        <td>17:00</td>
+        <td>179218</td>
+        <td>1400</td>
+        <td>15000</td>
+        <td>К оплате</td>
+        <td>vgladchenko@gmail.com</td>
+        <td>Нет</td>
+      </tr>
+      <tr>
+        <td>27.10.19</td>
+        <td>17:00</td>
+        <td>179218</td>
+        <td>1400</td>
+        <td>15000</td>
+        <td>К оплате</td>
+        <td>vgladchenko@gmail.com</td>
+        <td>Нет</td>
+      </tr>
+      <tr>
+        <td>27.10.19</td>
+        <td>17:00</td>
+        <td>179218</td>
+        <td>1400</td>
+        <td>15000</td>
+        <td>К оплате</td>
+        <td>vgladchenko@gmail.com</td>
+        <td>Нет</td>
+      </tr>
+
+    </table>
+
+    <div class="more">
+        <a  href="#">Посмореть все</a>
+    </div>
+    
+    <h4 class="mb-3">Цена</h4>
+    <div class="price" id="price">
+      <!-- PS4 -->
+      <div class="price__item d-flex">
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text ">-PS4-</span>
+            <span class="input-group-text">110 р.</span>
+          </div>
+          <input type="text" class="form-control" placeholder="Цена за 10 тыс.">
+          <button  type="button" class="btn btn-success btn-change">Изменить</button>
+          <button *ngIf="ActivePS4()" type="button" class="btn btn-warning btn-change">Отключить</button>
+          <button *ngIf="!ActivePS4()" type="button" class="btn btn-warning btn-change">Включить</button>
+          <div class="status d-flex">
+            <h5>Статус:</h5>
+            <h5 *ngIf="ActivePS4()" class="status__active">активный</h5>
+            <h5 *ngIf="!ActivePS4()" class="status__off">отключен</h5>
+          </div>
+        </div>
+      </div>
+      <!-- Xbos -->
+      <div class="price__item d-flex">
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text ">Xbox</span>
+            <span class="input-group-text">100 р.</span>
+          </div>
+            <input type="text" class="form-control" placeholder="Цена за 10 тыс.">
+            <button  type="button" class="btn btn-success btn-change">Изменить</button>
+            <button *ngIf="ActiveXbox()" type="button" class="btn btn-warning btn-change">Отключить</button>
+            <button *ngIf="!ActiveXbox()" type="button" class="btn btn-warning btn-change">Включить</button>
+            <div class="status d-flex">
+              <h5>Статус:</h5>
+              <h5 *ngIf="ActiveXbox()" class="status__active">активный</h5>
+              <h5 *ngIf="!ActiveXbox()" class="status__off">отключен</h5>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
