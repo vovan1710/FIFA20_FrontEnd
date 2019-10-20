@@ -137,6 +137,18 @@ export class MainComponentComponent implements OnInit {
           $.fn.login();
       });    
     });
+
+    // $(document).ready(function(){
+    //   $.fn.hiding = function(){ 
+    //     $.fn.login_hide();
+    //     $.fn.register_hide();
+    //     $.fn.first_section_show();   
+    //   }
+    //   $("#advaneteges-btn").click(function(){
+    //     $.fn.hiding();
+    //   });
+
+    // });
       //Register
 
     $(document).ready(function(){
@@ -156,6 +168,13 @@ export class MainComponentComponent implements OnInit {
       $.fn.register_hide();
       $.fn.login_hide();
     });
+    
+    // $('#advaneteges-btn').click(function (){
+    //   $.fn.first_section_show();
+    //   $.fn.register_hide();
+    //   $.fn.login_hide();
+    // });
+    
 
 
     //Проверка совпадения паролей
