@@ -1,5 +1,6 @@
 .footer{
-    height: 60px;
+    padding-bottom: 13px;
+    padding-top: 13px;
     text-align: center;
     align-items: center;
     color: #fff;
@@ -13,5 +14,12 @@
 @media screen and (max-width: 1200px){
     .footer{
         font-size: 12px;
+    }
+}
+/* 768-992 */
+@media screen and (max-width: 992px){
+    .footer{
+        font-size: 13px;
+        line-height: 17px;
     }
 }

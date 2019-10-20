@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/eb9de7b6-3e96-4b23-a4a6-f16f393e44a8/resourceGroups/fifa20-prod/providers/Microsoft.Web/sites/fifa20-coins",
+    "appService.deploySubpath": ""
+}

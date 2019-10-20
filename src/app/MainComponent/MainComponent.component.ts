@@ -103,6 +103,8 @@ export class MainComponentComponent implements OnInit {
 
       $.fn.login_show = function(){
         $('.login').fadeIn(500);
+        $('#hamburg').prop('checked', false);
+        $('section').removeClass('shadow')
       }                                          
       $.fn.login_hide= function(){
         $('.login').css('display', 'none');
@@ -110,6 +112,9 @@ export class MainComponentComponent implements OnInit {
 
       $.fn.register_show = function(){
         $('.register').fadeIn(500);
+        $('#hamburg').prop('checked', false);
+        $('section').removeClass('shadow')
+
       }
       $.fn.register_hide= function(){
         $('.register').css('display', 'none');

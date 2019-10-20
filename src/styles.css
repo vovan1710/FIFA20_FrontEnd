@@ -213,6 +213,10 @@ input::-webkit-inner-spin-button {
     margin-top: -2px;
   }
 
+.ui-slider-handle.ui-state-default.ui-corner-all:focus{
+    outline: none;
+  }
+
   .ui-slider-horizontal .ui-slider-range-max{
       background-color: #939393;
   }

@@ -731,7 +731,7 @@ transition: all, 3s;
 }
 
 .register__button, .login__button{
-    width: 440px;
+    width: 100%;
     background-color:#91232d;
     font-size: 18px;
     letter-spacing: 0em;
@@ -754,7 +754,7 @@ transition: all, 3s;
 }
 
 .register__social, .login__social{
-    width: 440px;
+    width: 100%;
     background-color:#ffffff;
     font-size: 16px;
     letter-spacing: 0em;
@@ -777,7 +777,7 @@ transition: all, 3s;
 }
 
 .register__security, .login__security{
-    width: 440px;
+    width: 100%;
     font-size: 16px;
     line-height: 20px;
     text-align: left;
@@ -815,6 +815,14 @@ transition: all, 3s;
     }
     .buying{
         padding-bottom: 30px;
+    }
+
+/* Register and login */
+    .register__icons, .login__icons{
+        padding-right: 20px;
+    }
+    .register__social img{
+        padding-right: 8px;
     }
 }
 
@@ -868,6 +876,7 @@ transition: all, 3s;
     .create-opinion fa-icon{
         right: 100px
     }
+
 }
 
 /* 576-768 */
@@ -992,12 +1001,38 @@ transition: all, 3s;
     .create-opinion fa-icon{
         right: 80px
     }
+    /* Register and login */
+    .register{
+        padding-top: 4px;
+    }
+
+    .form-wrapper{
+        padding: 15px 0 15px;
+    }
+
+    .register__header,.login__header{
+        padding-bottom: 17px;
+        font-size: 31px;
+    }
+
+    .register__icons, .login__icons{
+        padding-right: 0;
+    }
+    .register__social img{
+        padding-right: 15px;
+    }
+    .item__close{
+        padding-bottom: 30px;
+    }
 }
 
 /* 320-576 */
-@media screen and (max-width: 576px){
+@media screen and (max-width: 575px){
     .first-section{
         padding:10px 0 50px;
+    }
+    .logo{
+        width: 260px;
     }
     .bonus-info{
         display: none;
@@ -1174,6 +1209,32 @@ transition: all, 3s;
     .create-opinion__text textarea{
         width: 100%;
         letter-spacing: 0;
+    }
+
+    /* Register and login */
+
+    .register__social{
+        display: block;
+        text-align: center!important;
+    }
+    .register__social p{
+        padding-bottom: 5px;
+    }
+
+    .register__icons,.login__icons{
+        display: flex;
+        justify-content: space-around;
+        padding-right: 0;
+    }
+    .register__social img{
+        width: 40px;
+        height: auto;
+    }
+    .register__security-text,.login__security-text{
+        font-size: 14px;
+    }
+    .login__header,.register__header{
+        font-size: 30px;
     }
 
 }
